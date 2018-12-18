@@ -1,0 +1,287 @@
+/*----All projects page styling----*/
+
+.page-heading {
+    height: 8vh;
+    margin-top: 7.5vh;
+    padding: 0 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    position: sticky;
+    top: 7.5vh;
+    z-index: 2;
+    background-color: white;
+}
+
+.page-heading hr {
+    width: 100%;
+    border: 1px solid #333;
+}
+
+#filter-menu {
+    position: sticky;
+    top: 15.5vh;
+    z-index: 3;
+}
+
+#filter-select {
+    height: auto;
+    display: flex;
+    padding: 0;
+    background-color: white;
+}
+
+.filter h3 {
+    font-size: 0.9em;
+}
+
+.dropbtn {
+    width: 100%;
+    padding: 1em 0 1em 8vw ;
+    text-align: left;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    font-weight: 800;
+}
+
+.filter-open {
+    background-color: #ffdd11;
+}
+
+.dropmenu {
+    box-sizing: border-box;
+    position: fixed;
+    background-color: #ffdd11;
+    width: 100%;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+}
+
+.expand-menu {
+    max-height: 100%;
+    padding: 0;
+    transition: 0.3s ease-in;
+}
+
+.dropmenu a{
+    height: ;
+    color: #333;
+    display: block;
+    padding: 1em 8vw;
+    border-bottom: 1px solid #eecc11;
+    text-decoration: none;
+}
+
+.dropmenu a:active {
+    background-color: red;
+}
+
+.dropmenu a:hover {
+    font-weight: 900;
+    color: #ffdd11;
+    background-color: #333;
+}
+
+.projects-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.project-item {
+    height: 50vw;
+    position: relative;
+    display: none;
+}
+
+.project-overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: inherit;
+    width: 40%;
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    
+}
+.right-overlay {
+    right: 0;
+}
+
+.prjctnme {
+    font-weight: 700;
+    padding-bottom: ;
+}
+
+.project-overlay h3 { 
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.project-overlay hr { 
+    width: 100%;
+    border: 0.5px solid #666; 
+}
+
+.project-overlay h4 {
+    
+    font-size: 12px;
+}
+
+.project-item a span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+} 
+
+/* --- All projects page for desktop --- */
+
+@media (min-width:1200px) {
+    
+    .page-heading {
+        height: 12vh;
+        margin-top: 7.5vh;
+        padding: 0 7% 1em;
+        position: sticky;
+        top: 7.5vh;
+        z-index: 2;
+        background-color: white;
+    }
+    
+    .page-heading hr {
+        display: none;
+    }
+    
+    #filter-menu {
+        position: fixed;
+        top: 7.5vh;
+        left: 35%;
+    }
+
+    #filter-select {
+        height: 10vh;
+        width: auto;
+        display: flex;
+        padding: 0;
+        position: sticky;
+        top: 7.5vh;
+        z-index: 3;
+        
+    }
+    
+    .dropbtn {
+        width: 8vw;
+        padding: 0 1em;
+        text-align: left;
+        height: auto;
+        border: none;
+        font-weight: 800;
+    }
+    
+    .dropmenu {
+        box-sizing: border-box;
+        position: relative;
+        background-color: #ffdd11;
+        width: 8vw;
+        padding: 0;
+        transition: 0.2s ease-out;
+    }
+    
+    #service-menu {
+        left: 8vw;
+    }
+    
+    .dropmenu a{
+        padding: 1em 2em;
+    }
+
+        
+    .projects-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    .project-item {
+        height: 45vh;
+        width: 100%;
+    }
+    
+    .projects-grid div:hover .project-overlay {
+        display: flex;
+    }
+    
+    .project-overlay {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+    }
+    
+    .prjctnme {
+        font-size: 3.2em;
+        font-weight: 400;
+    }
+    
+    .project-overlay h3 { 
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .project-overlay hr { 
+        margin: 0.5em 0 ;
+        width: 100%;
+        border: 1px solid #333; 
+    }
+
+    .project-overlay h4 {
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+/* --- project link images --- */
+
+#first {
+    background-image: url(../img/work/building_01.jpg);
+    background-size: cover;
+}
+
+#second {
+    background-image: url(../img/work/bedroom_01.jpg);
+    background-size: cover;
+}
+
+#third {
+    background-image: url(../img/work/building_02.jpg);
+    background-size: cover;
+}
+
+#fourth {
+    background-image: url(../img/work/building_03.jpg);
+    background-size: cover;
+}
+
+#fifth {
+    background-image: url(../img/work/building_04.jpg);
+    background-size: cover;
+}
+
+#sixth {
+    background-image: url(../img/work/pantry_02.jpg);
+    background-size: cover;
+}
