@@ -52,8 +52,20 @@
 
 <body id="page-top">
 
+    <!-- Loading Start -->
+    <div id="loader">
+        <div class="loader-container">
+            <div class="lds-facebook">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loading End -->
+
     <!-- NavBar Start -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-offset">
                 <!-- Nav Brand -->
@@ -127,6 +139,7 @@
 
     <!-- Landing Start -->
     <div id="fullpage">
+        <!-- Home Section Start -->
         <div id="home" class="section">
             <div class="hero owl-carousel owl-theme">
                 <div class="hero-section" id="hero-section-1">
@@ -164,214 +177,252 @@
                 </div>
             </div>
         </div>
-        <!-- Landing End -->
+        <!-- Home Section End -->
 
-        <!-- About Us Start -->
+        <!-- About Us Section Start -->
         <div id="about-us" class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 imgbox" id="about">
-                        <div class="White-overlay">
-                            <h1>WE ARE A<br>TEAM OF<br>ARCHITECTS<br><br>AND LOT MORE</h1>
-                            <a href="team.html">SEE THE TEAM</a>
+            <div class="row">
+                <div class="main-container">
+                    <div class="img-overlay-container">
+                        <div class="img">
+                            <div class="white-overlay">
+                                <div class="overlay-inner">
+                                    <div class="block-1">
+                                        <h1>WE ARE A</h1>
+                                        <h1>TEAM OF</h1>
+                                        <h1>ARCHITECTS</h1>
+                                    </div>
+                                    <br>
+                                    <div class="block-2">
+                                        <h1>AND LOT MORE</h1>
+                                        <br>
+                                    </div>
+                                    <a href="team.html" class="text-link">SEE THE TEAM</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4" id="about-description">
-                        <hr class="blkhr lgonly">
-                        <div class="textbox">
-                            <p class="bodytext">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                                consequat.<span> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                    molestie
-                                    consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-                                    iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
-                                    te feugait nulla facilisi.
-                                </span>
-                            </p>
+                    <div class="detail-container col-md-4">
+                        <div class="container about-description">
+                            <hr class="lg-only">
+                            <p>We consider ourselves artists rather than regular 3D visualizers. We always take
+                                different paths to add a unique atmosphere to our work. We spend a lot of time focusing
+                                on key elements, such as composition, lighting and mood. Sometimes you have to redesign
+                                your route and take a completely different direction to find out which one is perfect.</p>
+                            <p class="lg-only">Founded in 2014 by Gihan Gunawardhana and Thakshila Kariyawasam, We have
+                                rapidly gained an
+                                international reputation for excellence in the visual representation of architecture
+                                and the built environment.</p>
+                            <hr class="lg-only">
                         </div>
-                        <hr class="blkhr">
-                        <div id="us-phrase-div">
-                            <p id="us-phrase">Lorem ipsum
-                                <br>dolor sit amet, consectetuer</p>
+                        <div class="container clients-heading">
+                            <h1>OUR CLIENTS</h1>
+                            <hr>
                         </div>
-                        <hr class="blkhr ">
-                        <!--carousel-->
-                        <div id="clients" class="owl-carousel owl-theme">
-                            <div class="logos">
-                                <div id="logo-1" class="cl-logo">
-                                    <img src="img/logo/clients/kemerada.png">
-                                </div>
-                                <div id="logo-2" class="cl-logo">
-                                    <img src="img/logo/clients/fairway.png">
+                        <div class="container clients-container">
+                            <div id="clients-mobile">
+                                <div id="clients-list-mobile" class="owl-carousel owl-theme">
+                                    <div class="logo">
+                                        <img src="img/logo/clients/kemerada.png">
+                                    </div>
+                                    <div class="logo">
+                                        <img src="img/logo/clients/fairway.png">
+                                    </div>
+                                    <div class="logo">
+                                        <img src="img/logo/clients/armani.png">
+                                    </div>
+                                    <div class="logo">
+                                        <img src="img/logo/clients/landmark.png">
+                                    </div>
+                                    <div class="logo">
+                                        <img src="img/logo/clients/bisha.png">
+                                    </div>
+                                    <div class="logo">
+                                        <img src="img/logo/clients/latitude.png">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="logos">
-                                <div id="logo-3" class="cl-logo">
-                                    <img src="img/logo/clients/armani.png">
-                                </div>
-                                <div id="logo-4" class="cl-logo">
-                                    <img src="img/logo/clients/landmark.png">
-                                </div>
-                            </div>
-                            <div class="logos">
-                                <div id="logo-5" class="cl-logo">
-                                    <img src="img/logo/clients/bisha.png">
-                                </div>
-                                <div id="logo-6" class="cl-logo">
-                                    <img src="img/logo/clients/latitude.png">
+                            <div id="clients-desktop">
+                                <div id="clients-list-desktop" class="owl-carousel owl-theme">
+                                    <div class="logo">
+                                        <img src="img/logo/clients/kemerada.png">
+                                        <img src="img/logo/clients/fairway.png">
+                                    </div>
+                                    <div class="logo">
+                                        <img src="img/logo/clients/armani.png">
+                                        <img src="img/logo/clients/landmark.png">
+                                    </div>
+                                    <div class="logo">
+                                        <img src="img/logo/clients/bisha.png">
+                                        <img src="img/logo/clients/latitude.png">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <hr class="blkhr lgonly">
+                        <div class="container bottom-hr-container">
+                            <hr class="lg-only">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About Us End -->
+        <!-- About Us Section End -->
 
-        <!-- Services-Section Start -->
+        <!-- Services Section Start -->
         <div id="services" class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 imgbox services">
-                        <div class="hovexp">
-                            <div class="topspace">
+            <div class="services-main-container container">
+                <div id="service-category-1" class="service-category">
+                    <div class="service-category-inner">
+                        <div class="category-heading">
+                            <h1>WE</h1>
+                            <h1>DESIGN</h1>
+                        </div>
+                        <div class="category-details">
+                            <div class="category-description">
+                                <p class="desktop-only">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                    elit, sed diam
+                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                                    erat volutpat. Ut wisi enim ad minim veniam.</p>
                             </div>
-                            <div class="servicestitle">
-                                <h1>WE<br>DESIGN</h1>
-                            </div>
-                            <div class="expnd">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                    euismod tincidunt ut laoreet dolore magna
-                                    aliquamerat volutpat. Ut wisi enim ad minim veniam.
-                                </p>
-                                <div class="servicedetails">
-                                    <h2>BRANDING</h2>
-                                    <p>Brand Logo</p>
-                                    <p>Extended Brand Guide</p>
+                            <div class="category-sub-sections">
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">BRANDING</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Brand Logo</p>
+                                        <p>Extended Brand Guide</p>
+                                    </div>
                                 </div>
-                                <div class="servicedetails">
-                                    <h2>BRAND MATERIAL
-                                        <br>DESIGN</h2>
-                                    <p>company Profile</p>
-                                    <p>Letterhead</p>
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">BRAND MATERIALS DESIGN</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Company Profile</p>
+                                        <p>Letterheads</p>
+                                    </div>
                                 </div>
-                                <div class="servicedetails">
-                                    <h2>PROMOTIONAL
-                                        <br>MATERIAL
-                                        <br>DESIGN</h2>
-                                    <p>Brand Logo</p>
-                                    <p>Extended Brand Guide</p>
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">PROMOTIONAL MATERIALS DESIGN</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Brochures & Leaflets</p>
+                                    </div>
                                 </div>
-                                <div class="servicedetails">
-                                    <h2>WEB DESIGN</h2>
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">WEB DESIGN</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Brochures & Leaflets</p>
+                                        <p>Letterheads</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="overlay"></div>
-                        <img src="img/work/living_01.jpg">
                     </div>
-                    <div class="col-lg-4 imgbox services">
-                        <div class="hovexp">
-                            <div class="topspace">
+                </div>
+                <div id="service-category-2" class="service-category">
+                    <div class="service-category-inner">
+                        <div class="category-heading">
+                            <h1>WE</h1>
+                            <h1>VISUALIZE</h1>
+                        </div>
+                        <div class="category-details">
+                            <div class="category-description">
+                                <p class="desktop-only">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                    elit, sed diam
+                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                                    erat volutpat. Ut wisi enim ad minim veniam.</p>
                             </div>
-                            <div class="servicestitle">
-                                <h1>WE
-                                    <br>VISUALIZE</h1>
-                            </div>
-                            <div class="expnd">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                    euismod tincidunt ut laoreet dolore magna
-                                    aliquamerat volutpat. Ut wisi enim ad minim veniam.
-                                </p>
-                                <div class="servicedetails">
-                                    <h2>BRANDING</h2>
-                                    <p>Brand Logo</p>
-                                    <p>Extended Brand Guide</p>
+                            <div class="category-sub-sections">
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">BRANDING</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Brand Logo</p>
+                                        <p>Extended Brand Guide</p>
+                                    </div>
                                 </div>
-                                <div class="servicedetails">
-                                    <h2>BRAND MATERIAL
-                                        <br>DESIGN</h2>
-                                    <p>company Profile</p>
-                                    <p>Letterhead</p>
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">BRAND MATERIALS DESIGN</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Company Profile</p>
+                                        <p>Letterheads</p>
+                                    </div>
                                 </div>
-                                <div class="servicedetails">
-                                    <h2>PROMOTIONAL
-                                        <br>MATERIAL
-                                        <br>DESIGN</h2>
-                                    <p>Brand Logo</p>
-                                    <p>Extended Brand Guide</p>
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">PROMOTIONAL MATERIALS DESIGN</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Brochures & Leaflets</p>
+                                    </div>
                                 </div>
-                                <div class="servicedetails">
-                                    <h2>WEB DESIGN</h2>
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">WEB DESIGN</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Brochures & Leaflets</p>
+                                        <p>Letterheads</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="overlay"></div>
-                        <img src="img/work/pantry_02.jpg">
                     </div>
-                    <div class="col-lg-4 imgbox services">
-                        <div class="hovexp">
-                            <div class="topspace">
+                </div>
+                <div id="service-category-3" class="service-category">
+                    <div class="service-category-inner">
+                        <div class="category-heading">
+                            <h1>WE MAKE</h1>
+                            <h1>BRANDS</h1>
+                        </div>
+                        <div class="category-details">
+                            <div class="category-description">
+                                <p class="desktop-only">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                    elit, sed diam
+                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                                    erat volutpat. Ut wisi enim ad minim veniam.</p>
                             </div>
-                            <div class="servicestitle">
-                                <h1>WE MAKE
-                                    <br>BRANDS</h1>
-                            </div>
-                            <div class="expnd">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                    euismod tincidunt ut laoreet dolore magna
-                                    aliquamerat volutpat. Ut wisi enim ad minim veniam.
-                                </p>
-                                <div class="servicedetails">
-                                    <h2>BRANDING</h2>
-                                    <p>Brand Logo</p>
-                                    <p>Extended Brand Guide</p>
+                            <div class="category-sub-sections">
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">BRANDING</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Brand Logo</p>
+                                        <p>Extended Brand Guide</p>
+                                    </div>
                                 </div>
-                                <div class="servicedetails">
-                                    <h2>BRAND MATERIAL
-                                        <br>DESIGN</h2>
-                                    <p>company Profile</p>
-                                    <p>Letterhead</p>
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">BRAND MATERIALS DESIGN</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Company Profile</p>
+                                        <p>Letterheads</p>
+                                    </div>
                                 </div>
-                                <div class="servicedetails">
-                                    <h2>PROMOTIONAL
-                                        <br>MATERIAL
-                                        <br>DESIGN</h2>
-                                    <p>Brand Logo</p>
-                                    <p>Extended Brand Guide</p>
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">PROMOTIONAL MATERIALS DESIGN</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Brochures & Leaflets</p>
+                                    </div>
                                 </div>
-                                <div class="servicedetails">
-                                    <h2>WEB DESIGN</h2>
+                                <div class="category-sub-section">
+                                    <h4 class="category-sub-heading">WEB DESIGN</h4>
+                                    <div class="category-sub-detail desktop-only">
+                                        <p>Brochures & Leaflets</p>
+                                        <p>Letterheads</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="overlay"></div>
-                        <img src="img/work/building_03.jpg">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Services-Section End -->
+        <!-- Services Section End -->
 
-        <!-- Projects-Section Start -->
+        <!-- Projects Section Start -->
         <div id="projects" class="section">
             <div class="grid-container">
                 <div id="item-1" class="grid-item horizontal-box">
                     <div class="grid-item-inner">
-                        <a href="">
+                        <a href="projectview.html">
                             <img src="./img/Portfolio-Section/Thumbnails/1.jpg" class="" alt="">
                         </a>
                     </div>
                 </div>
                 <div id="item-2" class="grid-item horizontal-box">
                     <div class="grid-item-inner">
-                        <a href="">
+                        <a href="projectview.html">
                             <img src="./img/Portfolio-Section/Thumbnails/2.jpg" class="img-responsive" alt="">
                         </a>
                     </div>
@@ -380,14 +431,14 @@
                     <div class="nested-items">
                         <div id="item-3" class="grid-item vertical-box">
                             <div class="grid-item-inner">
-                                <a href="">
+                                <a href="projectview.html">
                                     <img src="./img/Portfolio-Section/Thumbnails/3.jpg" class="img-responsive" alt="">
                                 </a>
                             </div>
                         </div>
                         <div id="item-4" class="grid-item vertical-box">
                             <div class="grid-item-inner">
-                                <a href="">
+                                <a href="projectview.html">
                                     <img src="./img/Portfolio-Section/Thumbnails/4.jpg" class="img-responsive" alt="">
                                 </a>
                             </div>
@@ -398,14 +449,14 @@
                     <div class="nested-items">
                         <div id="item-5" class="grid-item vertical-box">
                             <div class="grid-item-inner">
-                                <a href="">
+                                <a href="projectview.html">
                                     <img src="./img/Portfolio-Section/Thumbnails/5.jpg" class="img-responsive" alt="">
                                 </a>
                             </div>
                         </div>
                         <div id="item-6" class="grid-item vertical-box">
                             <div class="grid-item-inner">
-                                <a href="">
+                                <a href="projectview.html">
                                     <img src="./img/Portfolio-Section/Thumbnails/6.jpg" class="img-responsive" alt="">
                                 </a>
                             </div>
@@ -424,128 +475,234 @@
                 </div>
                 <div id="item-8" class="grid-item horizontal-box">
                     <div class="grid-item-inner">
-                        <a href="">
+                        <a href="projectview.html">
                             <img src="./img/Portfolio-Section/Thumbnails/8.jpg" class="img-responsive" alt="">
                         </a>
                     </div>
                 </div>
                 <div id="item-9" class="grid-item horizontal-box">
                     <div class="grid-item-inner">
-                        <a href="">
+                        <a href="projectview.html">
                             <img src="./img/Portfolio-Section/Thumbnails/9.jpg" class="img-responsive" alt="">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Projects-Section End -->
+        <!-- Projects Section End -->
 
-        <!-- Contact Us Start -->
+        <!-- Contact Us Section Start -->
         <div id="contact-us" class="section">
-            <div class="container map-inner">
-                <div class="row">
-                    <div id="map-holder" class="col-lg-10 col-sm-9">
-                        <div id="map"></div>
+            <div class="contact-us-main-container">
+                <div class="map-container">
+                    <div id="google-map"></div>
+                </div>
+                <div class="contact-us-details-container">
+                    <hr class="blk-hr lg-only">
+                    <div class="locate-us-main-container">
+                        <div class="locate-us">
+                            <h1>LOCATE</h1>
+                            <h1>US</h1>
+                        </div>
+                        <div class="locate-us-details">
+                            <p>74/7, Pragathi Pura, 3rd Lane,</p>
+                            <p>Katuwawala Road,</p>
+                            <p>Maharagama,</p>
+                            <p>Sri Lanka</p>
+                        </div>
                     </div>
-                    <div id="info-container" class="col-lg-2 col-sm-3">
-                        <hr class="hr-top">
-                        <div class="location">
-                            <div class="locate-us">
-                                <h1>Locate</h1>
-                                <h1>Us</h1>
-                            </div>
-                            <div class="address">
-                                <p>74/7, Pragathi Pura, 3rd Lane,</p>
-                                <p>Katuwawala Road,</p>
-                                <p>Maharagama</p>
-                                <p>Sri Lanka</p>
+                    <hr class="blk-hr">
+                    <div class="get-in-touch-main-container">
+                        <div class="get-in-touch">
+                            <h1>GET</h1>
+                            <h1>IN</h1>
+                            <h1>TOUCH</h1>
+                        </div>
+                        <div class="get-in-touch-details">
+                            <p>E-Mail : info@tdkarchitects.lk</p>
+                            <p>Phone : +94 71 818 8244</p>
+                            <div class="social-media-icons">
+                                <a href="https://www.facebook.com/tdkarchitects/" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="https://twitter.com/TDKarchitects" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/tdkarchitects/" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="https://vimeo.com/tdkarchitects" target="_blank">
+                                    <i class="fa fa-vimeo"></i>
+                                </a>
                             </div>
                         </div>
-                        <hr class="hr-middle">
-                        <div class="getting-touch">
-                            <div class="get-in-touch">
-                                <h1>Get</h1>
-                                <h1>In</h1>
-                                <h1>Touch</h1>
-                            </div>
-                            <div class="contact-social">
-                                <div class="contact-details">
-                                    <p>E-Mail : info@tdkarchitects.lk</p>
-                                    <p>Phone : +94 71 818 8244</p>
-                                </div>
-                                <div class="social-media-icons">
-                                    <a href="https://www.facebook.com/tdkarchitects/" target="_blank">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    <a href="https://twitter.com/TDKarchitects" target="_blank">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/tdkarchitects/" target="_blank">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                    <a href="https://vimeo.com/tdkarchitects" target="_blank">
-                                        <i class="fa fa-vimeo"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="hr-bottom">
                     </div>
+                    <hr class="blk-hr lg-only">
                 </div>
             </div>
-            <div class="footer text-center">
-                <p>Designed & Developed with &nbsp;
-                    <span><i class="fa fa-heart"></i></span>
-                    &nbsp; by TDK Illusions</p>
+            <div class="footer">
+                <p>Designed & Developed with &nbsp;<span><i class="fa fa-heart"></i></span>&nbsp; by TDK Illusions</p>
             </div>
-            <!-- Contact Us End -->
         </div>
-        <!-- jQuery CDN -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <!-- <script src="./vendor/jquery/jquery.min.js"></script> -->
+        <!-- Contact Us Section End -->
+    </div>
+    <!-- Landing End -->
+    
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="./vendor/jquery/jquery.min.js"></script> -->
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
 
-        <!-- Plugin JavaScript -->
-        <!-- scrolloverflow -->
-        <script src="./vendor/fullpage-js/v2/js/scrolloverflow.js"></script>
-        <!-- Fullpage.js -->
-        <script src="./vendor/fullpage-js/v2/js/jquery.fullPage.js"></script>
-        <!-- jQuery Easing -->
-        <script src="./vendor/jquery.easing/jquery.easing.js"></script>
-        <!-- wow.js -->
-        <script src="./vendor/wow.js/wow.js"></script>
-        <!-- Owl Carousel -->
-        <script src="./vendor/owl.carousel/js/owl.carousel.js"></script>
+    <!-- Plugin JavaScript -->
+    <!-- scrolloverflow -->
+    <script src="./vendor/fullpage-js/v2/js/scrolloverflow.js"></script>
+    <!-- Fullpage.js -->
+    <script src="./vendor/fullpage-js/v2/js/jquery.fullPage.js"></script>
+    <!-- jQuery Easing -->
+    <script src="./vendor/jquery.easing/jquery.easing.js"></script>
+    <!-- wow.js -->
+    <script src="./vendor/wow.js/wow.js"></script>
+    <!-- Owl Carousel -->
+    <script src="./vendor/owl.carousel/js/owl.carousel.js"></script>
 
-        <!-- Theme JavaScript -->
-        <script src="./js/fullpage.controller.js"></script>
-        <script src="./js/script.js"></script>
-        <script src="./js/custom.js"></script>
-        <!-- Google Map Initialization -->
-        <script>
-            var map, marker;
+    <!-- Theme JavaScript -->
+    <script src="./js/fullpage.controller.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/custom.js"></script>
+    <!-- Google Map Initialization -->
+    <script>
+        var map, marker;
 
-            function initMap() {
-                var location = {
-                    lat: 6.839325,
-                    lng: 79.917595
-                };
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: location,
-                    zoom: 15
-                });
+        function initMap() {
+            var location = {
+                lat: 6.839325,
+                lng: 79.917595
+            };
+            map = new google.maps.Map(document.getElementById('google-map'), {
+                center: location,
+                zoom: 15,
+                disableDefaultUI: true,
+                zoomControl: true,
+                styles: [{
+                        "featureType": "administrative",
+                        "elementType": "all",
+                        "stylers": [{
+                            "saturation": "-100"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative.province",
+                        "elementType": "all",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [{
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": 65
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [{
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": "50"
+                            },
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "all",
+                        "stylers": [{
+                            "saturation": "-100"
+                        }]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "all",
+                        "stylers": [{
+                            "visibility": "simplified"
+                        }]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "all",
+                        "stylers": [{
+                            "lightness": "30"
+                        }]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "all",
+                        "stylers": [{
+                            "lightness": "40"
+                        }]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [{
+                                "saturation": -100
+                            },
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "hue": "#ffff00"
+                            },
+                            {
+                                "lightness": -25
+                            },
+                            {
+                                "saturation": -97
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels",
+                        "stylers": [{
+                                "lightness": -25
+                            },
+                            {
+                                "saturation": -100
+                            }
+                        ]
+                    }
+                ]
+            });
 
-                marker = new google.maps.Marker({
-                    position: location,
-                    map: map,
-                    title: 'TDK Architects'
-                });
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmeLxO_ARD4U2zAWM096TZlOQYy0PQXt0&callback=initMap"
-            async defer></script>
+            marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'TDK Architects'
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmeLxO_ARD4U2zAWM096TZlOQYy0PQXt0&callback=initMap"
+        async defer></script>
 </body>
 
 </html>

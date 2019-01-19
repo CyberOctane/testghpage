@@ -50,23 +50,23 @@ function sideMenuWidthReset() {
     document.getElementById('side-menu').style.width = '0%';
 }
 
-/*
-window.onresize = function (event) {
-    applyOrientation();
-}
 
-function applyOrientation() {
-    if (window.innerHeight > window.innerWidth) {
-        // alert("You are now in portrait");
-        document.getElementById('map-container').classList.remove('col-xs-8');
-        document.getElementById('info-container').classList.remove('col-xs-4');
-    } else {
-        // alert("You are now in landscape");
-        document.getElementById('map-container').classList.add('col-xs-8');
-        document.getElementById('info-container').classList.add('col-xs-4');
-    }
-}
-*/
+// window.onresize = function (event) {
+//     applyOrientation();
+// }
+
+// function applyOrientation() {
+//     if (window.innerHeight > window.innerWidth) {
+//         // alert("You are now in portrait");
+//         document.getElementById('about').classList.remove('col-xs-8');
+//         document.getElementById('about-description').classList.remove('col-xs-4');
+//     } else {
+//         // alert("You are now in landscape");
+//         document.getElementById('about').classList.add('col-xs-8');
+//         document.getElementById('about-description').classList.add('col-xs-4');
+//     }
+// }
+
 
 /*function carouselWowAnimation() {
     if (document.getElementById('1').classList.contains(animated)) {

@@ -1,6 +1,14 @@
 (function ($) {
     "use strict"; // Start of use strict
 
+    /*-------- Loading Section ----------*/
+
+    $(window).on("load", function () {
+        $("#loader").fadeOut("slow", function () {
+            $(this).remove();
+        });
+    });
+
     /* --------- Wow Init ------ */
     new WOW().init();
 
@@ -23,11 +31,12 @@
             touchDrag: false
         });
     });
-    
+
     /*----- Clients Section -----*/
     $(document).ready(function () {
-        $("#clients").owlCarousel({
+        $("#clients-list-mobile").owlCarousel({
             loop: true,
+            margin: 10,
             singleItem: true,
             autoplay: true,
             autoHeight: true,
@@ -35,9 +44,38 @@
             smartSpeed: 1000,
             autoplayHoverPause: false,
             dots: false,
-            responsive:{
-                0:{items:1.5},
-                1200:{items:3}
+            responsive: {
+                0: {
+                    items: 3
+                },
+                481: {
+                    items: 4
+                },
+                639: {
+                    items: 6
+                },
+                767: {
+                    items: 5
+                }
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $("#clients-list-desktop").owlCarousel({
+            loop: true,
+            margin: 10,
+            singleItem: true,
+            autoplay: true,
+            autoHeight: true,
+            autoplayTimeout: 3000,
+            smartSpeed: 1000,
+            autoplayHoverPause: false,
+            dots: false,
+            responsive: {
+                992: {
+                    items: 3
+                }
             }
         });
     });
@@ -49,17 +87,10 @@
         // we round here to reduce a little workload
         stop = Math.round($(window).scrollTop());
         if (stop > mainbottom) {
-            $('#mainNav').addClass('past-main');
+            $('#main-nav').addClass('past-main');
         } else {
-            $('#mainNav').removeClass('past-main');
+            $('#main-nav').removeClass('past-main');
         }
     });
-
-    // Offset for Main Navigation
-    // $('#mainNav').affix({
-    //     offset: {
-    //         top: 8000
-    //     }
-    // });
 
 })(jQuery);
