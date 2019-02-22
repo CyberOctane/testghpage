@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
     position: sticky;
     top: 7.5vh;
     z-index: 2;
@@ -38,7 +37,7 @@
 
 .dropbtn {
     width: 100%;
-    padding: 1em 0 1em 8vw ;
+    padding: 1em 0 1em 8vw;
     text-align: left;
     height: auto;
     background-color: transparent;
@@ -67,8 +66,7 @@
     transition: 0.3s ease-in;
 }
 
-.dropmenu a{
-    height: ;
+.dropmenu a {
     color: #333;
     display: block;
     padding: 1em 8vw;
@@ -111,29 +109,28 @@
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
-    
+
 }
+
 .right-overlay {
     right: 0;
 }
 
 .prjctnme {
     font-weight: 700;
-    padding-bottom: ;
 }
 
-.project-overlay h3 { 
+.project-overlay h3 {
     font-weight: 900;
     font-size: 12px;
 }
 
-.project-overlay hr { 
+.project-overlay hr {
     width: 100%;
-    border: 0.5px solid #666; 
+    border: 0.5px solid #666;
 }
 
 .project-overlay h4 {
-    
     font-size: 12px;
 }
 
@@ -147,12 +144,12 @@
 
 .show {
     display: block;
-} 
+}
 
 /* --- All projects page for desktop --- */
 
 @media (min-width:1200px) {
-    
+
     .page-heading {
         height: 12vh;
         margin-top: 7.5vh;
@@ -162,11 +159,11 @@
         z-index: 2;
         background-color: white;
     }
-    
+
     .page-heading hr {
         display: none;
     }
-    
+
     #filter-menu {
         position: fixed;
         top: 7.5vh;
@@ -181,9 +178,9 @@
         position: sticky;
         top: 7.5vh;
         z-index: 3;
-        
+
     }
-    
+
     .dropbtn {
         width: 8vw;
         padding: 0 1em;
@@ -192,7 +189,7 @@
         border: none;
         font-weight: 800;
     }
-    
+
     .dropmenu {
         box-sizing: border-box;
         position: relative;
@@ -201,51 +198,51 @@
         padding: 0;
         transition: 0.2s ease-out;
     }
-    
+
     #service-menu {
         left: 8vw;
     }
-    
-    .dropmenu a{
+
+    .dropmenu a {
         padding: 1em 2em;
     }
 
-        
+
     .projects-grid {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .project-item {
         height: 45vh;
         width: 100%;
     }
-    
+
     .projects-grid div:hover .project-overlay {
         display: flex;
     }
-    
+
     .project-overlay {
         display: none;
         width: 100%;
         justify-content: center;
         align-items: center;
-        text-align: center; 
+        text-align: center;
     }
-    
+
     .prjctnme {
         font-size: 3.2em;
         font-weight: 400;
     }
-    
-    .project-overlay h3 { 
+
+    .project-overlay h3 {
         font-size: 1.2em;
         text-align: center;
     }
 
-    .project-overlay hr { 
-        margin: 0.5em 0 ;
+    .project-overlay hr {
+        margin: 0.5em 0;
         width: 100%;
-        border: 1px solid #333; 
+        border: 1px solid #333;
     }
 
     .project-overlay h4 {

@@ -1,250 +1,264 @@
 <!DOCTYPE html>
-<html>
-    
-    <head>
-        
-        <title>TDK | All Projects</title>
-        
-        <!-- Bootstrap v3.3.7 Core CSS -->
-        <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" type="text/css">
-        
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/allprojects.css">
-        
-    </head>
-    
-    <body>
-        
-        <!-- NavBar Start -->
-        <nav id="mainNav" class="navbar navbar-default past-main navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-offset">
-                    <!-- Nav Brand -->
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">
-                            <!-- <img src="./img/logo/tdk_logo.png" alt="TDK Logo"> -->
-                        </a>
-                    </div>
-                    <!-- Nav Brand End -->
+<html lang="en">
 
-                    <!-- Hamburger Menu -->
-                    <div class="hamburger-menu" id="hamburger-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a onclick="openSlideMenu()">
-                                    <svg width="25" height="30">
-                                        <path d="M0,5 30,5" stroke-width="2" />
-                                        <path d="M0,12 30,12" stroke-width="2" />
-                                        <path d="M0,19 30,19" stroke-width="2" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Hamburger Menu End -->
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="TDK Architects Landing Page">
+    <meta name="keywords" content="TDK, TDK Architects, Landing Page Template">
+
+    <title>TDK | All Projects</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/logo/icon/favicon.png" type="image/png" sizes="16x16">
+
+    <!-- Bootstrap v3.3.7 Core CSS -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Google Fonts API -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/allprojects.css">
+
+</head>
+
+<body>
+
+    <!-- NavBar Start -->
+    <nav id="mainNav" class="navbar navbar-default past-main navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-offset">
+                <!-- Nav Brand -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- <img src="./img/logo/tdk_logo.png" alt="TDK Logo"> -->
+                    </a>
                 </div>
-                <!-- Navbar-Header End -->
+                <!-- Nav Brand End -->
+
+                <!-- Hamburger Menu -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a onclick="openSlideMenu()">
+                                <svg width="25" height="30">
+                                    <path d="M0,5 30,5" stroke-width="2" />
+                                    <path d="M0,12 30,12" stroke-width="2" />
+                                    <path d="M0,19 30,19" stroke-width="2" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Hamburger Menu End -->
             </div>
-            <!-- Container End -->
-        </nav>
-        <!-- NavBar End -->
-        
-        <!-- Page Heading -->
-        <div class="page-heading">
-            <hr>
-            <h1>OUR PROJECTS</h1>
-            <hr>
+            <!-- Navbar-Header End -->
         </div>
-        <div id="filter-menu">
-            <div id="filter-select">
-                <button id="sector" class="filter dropbtn">
-                    SECTOR:
-                    <h3 id="sector-btn">SECTOR</h3>
-                </button>
-                <button id="service" class="filter dropbtn">
-                    SERVICE:
-                    <h3 id="service-btn">SERVICE</h3>
-                </button>
-                <button id="all" class="dropbtn">
-                    <h3>SEE ALL<br>PROJECTS</h3>
-                </button>
-            </div>
-            <div id="sector-menu" class="dropmenu">
-                <a href="#" id="project-item" class="sector-class" >ALL</a>
-                <a href="#" id="sector-01" class="sector-class" >SECTOR 01</a>
-                <a href="#" id="sector-02" class="sector-class" >SECTOR 02</a>
-                <a href="#" id="sector-03" class="sector-class " >SECTOR 03</a>
-            </div>
-            <div id="service-menu" class="dropmenu">
-                <a href="#" id="project-item" class="service-class">ALL</a>
-                <a href="#" id="service-01" class="service-class">SERVICE 01</a>
-                <a href="#" id="service-02" class="service-class">SERVICE 02</a>
-                <a href="#" id="service-03" class="service-class">SERVICE 03</a>
-            </div>
+        <!-- Container End -->
+    </nav>
+    <!-- NavBar End -->
+
+    <!-- Page Heading -->
+    <div class="page-heading">
+        <h1>OUR PROJECTS</h1>
+    </div>
+    <div id="filter-menu">
+        <div id="filter-select">
+            <button id="sector" class="filter dropbtn">
+                SECTOR:
+                <h3 id="sector-btn">SECTOR</h3>
+            </button>
+            <button id="service" class="filter dropbtn">
+                SERVICE:
+                <h3 id="service-btn">SERVICE</h3>
+            </button>
+            <button id="all" class="dropbtn">
+                <a href="all-projects.html" style="color:black">ALL</a>
+            </button>
         </div>
-        
-        <!-- Portfolio Starts -->
-        
-        <div class="projects-grid">
-            <div id="first" class="project-item sector-01 service-01">
-                <div class="project-overlay right-overlay">
-                    <h1 class="prjctnme">PROJECT<br>NAME</h1>
-                    <div>
-                        <hr>
-                        <h3>TECHTONIC ARCHITECT</h3>
-                        <hr>
-                        <h4>LANDMARK DEVELOPERS</h4>
-                    </div>
-                </div>
-                <a href="projectview.html"><span></span></a>
-            </div>
-            <div id="second" class="project-item sector-03 service-01" style="background-color: yellow;">
-                <div class="project-overlay left-overlay">
-                    <h1 class="prjctnme">PROJECT<br>NAME</h1>
-                    <div>
-                        <hr>
-                        <h3>TECHTONIC ARCHITECT</h3>
-                        <hr>
-                        <h4>LANDMARK DEVELOPERS</h4>
-                    </div>
-                </div>
-                <a href="projectview.html"><span></span></a>
-            </div>
-            <div id="third" class="project-item sector-03 service-01" style="background-color: blue;">
-                <div class="project-overlay right-overlay">
-                    <h1 class="prjctnme">PROJECT<br>NAME</h1>
-                    <div>
-                        <hr>
-                        <h3>TECHTONIC ARCHITECT</h3>
-                        <hr>
-                        <h4>LANDMARK DEVELOPERS</h4>
-                    </div>
-                </div>
-                <a href="projectview.html"><span></span></a>
-            </div>
-            <div id="fourth" class="project-item sector-01 service-01">
-                <div class="project-overlay right-overlay">
-                    <h1 class="prjctnme">PROJECT<br>NAME</h1>
-                    <div>
-                        <hr>
-                        <h3>TECHTONIC ARCHITECT</h3>
-                        <hr>
-                        <h4>LANDMARK DEVELOPERS</h4>
-                    </div>
-                </div>
-                <a href="projectview.html"><span></span></a>
-            </div>
-            <div id="fifth" class="project-item sector-03 service-01" style="background-color: yellow;">
-                <div class="project-overlay left-overlay">
-                    <h1 class="prjctnme">PROJECT<br>NAME</h1>
-                    <div>
-                        <hr>
-                        <h3>TECHTONIC ARCHITECT</h3>
-                        <hr>
-                        <h4>LANDMARK DEVELOPERS</h4>
-                    </div>
-                </div>
-                <a href="projectview.html"><span></span></a>
-            </div>
-            <div id="sixth" class="project-item sector-03 service-01" style="background-color: blue;">
-                <div class="project-overlay right-overlay">
-                    <h1 class="prjctnme">PROJECT<br>NAME</h1>
-                    <div>
-                        <hr>
-                        <h3>TECHTONIC ARCHITECT</h3>
-                        <hr>
-                        <h4>LANDMARK DEVELOPERS</h4>
-                    </div>
-                </div>
-                <a href="projectview.html"><span></span></a>
-            </div>
+        <div id="sector-menu" class="dropmenu">
+            <a href="#" id="project-item" class="sector-class">ALL</a>
+            <a href="#" id="sector-01" class="sector-class">SECTOR 01</a>
+            <a href="#" id="sector-02" class="sector-class">SECTOR 02</a>
+            <a href="#" id="sector-03" class="sector-class ">SECTOR 03</a>
         </div>
-        
-        <!-- Portfolio Ends -->
-        
-        <script>
-            var sector ;
-            var service ;
-            var openFilter ;
-            
-            select ("sector");
-            select ("service");
-            all();
-            
-            // show dropdown-menu on click 
-            var filters =document.getElementsByClassName("filter");
-            for (i=0; i<filters.length; i++){
-                filters[i].addEventListener('click', function(e){
-                    if (openFilter !==undefined && openFilter !==this){
-                        toggle_menu();
-                        openFilter = this;
-                        toggle_menu();
-                    } else if (openFilter ===this) {
-                        toggle_menu();
-                        openFilter = undefined;
-                    } else {
-                        openFilter = this;
-                        toggle_menu(); 
-                    }
-                    e.stopPropagation(); 
-                })
-            }
-            
-            //toggle menu
-            function toggle_menu() {
-                document.getElementById(openFilter.id+"-menu").classList.toggle("expand-menu");
-                openFilter.classList.toggle("filter-open");
-            }
-            
-            //close open menu on click on document
-            document.addEventListener('click',function(){
-                toggle_menu();
-                openFilter = undefined;;
-                //alert(openMenu);
+        <div id="service-menu" class="dropmenu">
+            <a href="#" id="project-item" class="service-class">ALL</a>
+            <a href="#" id="service-01" class="service-class">SERVICE 01</a>
+            <a href="#" id="service-02" class="service-class">SERVICE 02</a>
+            <a href="#" id="service-03" class="service-class">SERVICE 03</a>
+        </div>
+    </div>
+
+    <!-- Portfolio Starts -->
+
+    <div class="projects-grid">
+        <div id="first" class="project-item sector-01 service-01">
+            <div class="project-overlay right-overlay">
+                <h1 class="prjctnme">PROJECT<br>NAME</h1>
+                <div>
+                    <h3>TECHTONIC ARCHITECT</h3>
+                    <hr>
+                    <h4>LANDMARK DEVELOPERS</h4>
+                </div>
+            </div>
+            <a href="projectview.html"><span></span></a>
+        </div>
+        <div id="second" class="project-item sector-03 service-01" style="background-color: yellow;">
+            <div class="project-overlay left-overlay">
+                <h1 class="prjctnme">PROJECT<br>NAME</h1>
+                <div>
+                    <h3>TECHTONIC ARCHITECT</h3>
+                    <hr>
+                    <h4>LANDMARK DEVELOPERS</h4>
+                </div>
+            </div>
+            <a href="projectview.html"><span></span></a>
+        </div>
+        <div id="third" class="project-item sector-03 service-01" style="background-color: blue;">
+            <div class="project-overlay right-overlay">
+                <h1 class="prjctnme">PROJECT<br>NAME</h1>
+                <div>
+                    <h3>TECHTONIC ARCHITECT</h3>
+                    <hr>
+                    <h4>LANDMARK DEVELOPERS</h4>
+                </div>
+            </div>
+            <a href="projectview.html"><span></span></a>
+        </div>
+        <div id="fourth" class="project-item sector-01 service-01">
+            <div class="project-overlay right-overlay">
+                <h1 class="prjctnme">PROJECT<br>NAME</h1>
+                <div>
+                    <h3>TECHTONIC ARCHITECT</h3>
+                    <hr>
+                    <h4>LANDMARK DEVELOPERS</h4>
+                </div>
+            </div>
+            <a href="projectview.html"><span></span></a>
+        </div>
+        <div id="fifth" class="project-item sector-03 service-01" style="background-color: yellow;">
+            <div class="project-overlay left-overlay">
+                <h1 class="prjctnme">PROJECT<br>NAME</h1>
+                <div>
+                    <h3>TECHTONIC ARCHITECT</h3>
+                    <hr>
+                    <h4>LANDMARK DEVELOPERS</h4>
+                </div>
+            </div>
+            <a href="projectview.html"><span></span></a>
+        </div>
+        <div id="sixth" class="project-item sector-03 service-01" style="background-color: blue;">
+            <div class="project-overlay right-overlay">
+                <h1 class="prjctnme">PROJECT<br>NAME</h1>
+                <div>
+                    <h3>TECHTONIC ARCHITECT</h3>
+                    <hr>
+                    <h4>LANDMARK DEVELOPERS</h4>
+                </div>
+            </div>
+            <a href="projectview.html"><span></span></a>
+        </div>
+    </div>
+
+    <!-- Portfolio Ends -->
+
+    <script>
+        var sector;
+        var service;
+        var openFilter;
+
+        select("sector");
+        select("service");
+        all();
+
+        // show dropdown-menu on click 
+        var filters = document.getElementsByClassName("filter");
+        for (i = 0; i < filters.length; i++) {
+            filters[i].addEventListener('click', function (e) {
+                if (openFilter !== undefined && openFilter !== this) {
+                    toggle_menu();
+                    openFilter = this;
+                    toggle_menu();
+                } else if (openFilter === this) {
+                    toggle_menu();
+                    openFilter = undefined;
+                } else {
+                    openFilter = this;
+                    toggle_menu();
+                }
+                e.stopPropagation();
             })
-            
-            
-            //dropdown-menu - select category to show
-            function select(category,){
-                var menu =document.getElementById(category+"-menu");
-                menu.addEventListener('click', function(e){
-                    if (e.target.tagName !='A'){
-                        e.stopPropagation();
-                        return;
-                    } else {
-                        window[category] =e.target.id;
-                        //set button text
-                        document.getElementById(category+"-btn").textContent =e.target.textContent;
-                        filter();
-                    }
-                    
-                }, false);
-            }
-            
-            //'all' button - show all projects
-            document.getElementById("all").onclick =function(){all()};
-                
-            function all(){
-                sector ="project-item";
-                service ="project-item" ;
-                document.getElementById("service-btn").textContent ="All";
-                document.getElementById("sector-btn").textContent ="All";
-                filter();
-            }
-            
-            //filter gallery & set button text by selected categories
-            function filter(){
-                var all = document.getElementsByClassName("project-item");
-                for(i=0; i<all.length; i++){
-                    all[i].classList.remove("show");
-                    if(all[i].classList.contains(sector) && all[i].classList.contains(service)){all[i].classList.add("show");}
+        }
+
+        //toggle menu
+        function toggle_menu() {
+            document.getElementById(openFilter.id + "-menu").classList.toggle("expand-menu");
+            openFilter.classList.toggle("filter-open");
+        }
+
+        //close open menu on click on document
+        document.addEventListener('click', function () {
+            toggle_menu();
+            openFilter = undefined;;
+            //alert(openMenu);
+        })
+
+
+        //dropdown-menu - select category to show
+        function select(category, ) {
+            var menu = document.getElementById(category + "-menu");
+            menu.addEventListener('click', function (e) {
+                if (e.target.tagName != 'A') {
+                    e.stopPropagation();
+                    return;
+                } else {
+                    window[category] = e.target.id;
+                    //set button text
+                    document.getElementById(category + "-btn").textContent = e.target.textContent;
+                    filter();
+                }
+
+            }, false);
+        }
+
+        //'all' button - show all projects
+        document.getElementById("all").onclick = function () {
+            all()
+        };
+
+        function all() {
+            sector = "project-item";
+            service = "project-item";
+            document.getElementById("service-btn").textContent = "All";
+            document.getElementById("sector-btn").textContent = "All";
+            filter();
+        }
+
+        //filter gallery & set button text by selected categories
+        function filter() {
+            var all = document.getElementsByClassName("project-item");
+            for (i = 0; i < all.length; i++) {
+                all[i].classList.remove("show");
+                if (all[i].classList.contains(sector) && all[i].classList.contains(service)) {
+                    all[i].classList.add("show");
                 }
             }
-            
-        </script>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-             
-    </body>
-    
+        }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+
 </html>
