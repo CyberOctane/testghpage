@@ -1,7 +1,11 @@
 /*----All projects page styling----*/
 
+button:focus {
+    outline: none;
+}
+
 .page-heading {
-    height: 8vh;
+    height: 9vh;
     margin-top: 7.5vh;
     padding: 0 8%;
     display: flex;
@@ -9,19 +13,20 @@
     justify-content: space-around;
     position: sticky;
     top: 7.5vh;
-    z-index: 2;
+    z-index: 2000;
     background-color: white;
+    transition: 0.02s ease-out;
 }
 
 .page-heading hr {
     width: 100%;
-    border: 1px solid #333;
+    border-top: 1px solid #333;
 }
 
 #filter-menu {
     position: sticky;
-    top: 15.5vh;
-    z-index: 3;
+    /* top: 15.5vh; */
+    z-index: 100;
 }
 
 #filter-select {
@@ -43,21 +48,27 @@
     background-color: transparent;
     border: none;
     font-weight: 800;
+    font-size: 12px;
+    transition: 0.2s ease-out;
+}
+
+.dropbtn:hover {
+    color: #868686;
 }
 
 .filter-open {
-    background-color: #ffdd11;
+    background-color: white;
 }
 
 .dropmenu {
     box-sizing: border-box;
     position: fixed;
-    background-color: #ffdd11;
+    background-color: white;
     width: 100%;
     max-height: 0;
     padding: 0;
     overflow: hidden;
-    transition: 0.2s ease-out;
+    /* transition: 0.4s ease-out; */
 }
 
 .expand-menu {
@@ -70,7 +81,7 @@
     color: #333;
     display: block;
     padding: 1em 8vw;
-    border-bottom: 1px solid #eecc11;
+    /* border-bottom: 1px solid #eecc11; */
     text-decoration: none;
 }
 
@@ -79,7 +90,6 @@
 }
 
 .dropmenu a:hover {
-    font-weight: 900;
     color: #ffdd11;
     background-color: #333;
 }
@@ -88,6 +98,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    z-index: -5000;
 }
 
 .project-item {
@@ -109,14 +120,13 @@
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
-
 }
 
 .right-overlay {
     right: 0;
 }
 
-.prjctnme {
+.project-name {
     font-weight: 700;
 }
 
@@ -127,7 +137,7 @@
 
 .project-overlay hr {
     width: 100%;
-    border: 0.5px solid #666;
+    border-top: 0.5px solid #666;
 }
 
 .project-overlay h4 {
@@ -156,7 +166,6 @@
         padding: 0 7% 1em;
         position: sticky;
         top: 7.5vh;
-        z-index: 2;
         background-color: white;
     }
 
@@ -166,8 +175,8 @@
 
     #filter-menu {
         position: fixed;
-        top: 7.5vh;
-        left: 35%;
+        top: 8vh;
+        left: 6.5%;
     }
 
     #filter-select {
@@ -188,15 +197,15 @@
         height: auto;
         border: none;
         font-weight: 800;
+        font-size: 13px;
     }
 
     .dropmenu {
         box-sizing: border-box;
         position: relative;
-        background-color: #ffdd11;
+        background-color: white;
         width: 8vw;
         padding: 0;
-        transition: 0.2s ease-out;
     }
 
     #service-menu {
@@ -204,7 +213,7 @@
     }
 
     .dropmenu a {
-        padding: 1em 2em;
+        padding: 0.3em 1em;
     }
 
 
@@ -227,9 +236,10 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding: 0 5%;
     }
 
-    .prjctnme {
+    .project-name  {
         font-size: 3.2em;
         font-weight: 400;
     }
@@ -242,7 +252,7 @@
     .project-overlay hr {
         margin: 0.5em 0;
         width: 100%;
-        border: 1px solid #333;
+        border-top: 1px solid #333;
     }
 
     .project-overlay h4 {
@@ -253,32 +263,118 @@
 
 /* --- project link images --- */
 
-#first {
-    background-image: url(../img/work/building_01.jpg);
-    background-size: cover;
+#_1 {
+    background-image: url(../img/projects/proposed_4_unit_house_project/thumbnail_all_projects.jpg);
 }
 
-#second {
-    background-image: url(../img/work/bedroom_01.jpg);
-    background-size: cover;
+#_2 {
+    background-image: url(../img/projects/proposed_cubic_house_project/thumbnail_all_projects.jpg);
 }
 
-#third {
-    background-image: url(../img/work/building_02.jpg);
-    background-size: cover;
+#_3{
+    background-image: url(../img/projects/proposed_low_cost_house_project/thumbnail_all_projects.jpg);
 }
 
-#fourth {
-    background-image: url(../img/work/building_03.jpg);
-    background-size: cover;
+#_4 {
+    background-image: url(../img/projects/akbar_tea_shop_at_pearl_of_asia/thumbnail_all_projects.jpg);
 }
 
-#fifth {
-    background-image: url(../img/work/building_04.jpg);
-    background-size: cover;
+#_5 {
+    background-image: url(../img/projects/the_fairway_apartments_koswatte/thumbnail_all_projects.jpg);
 }
 
-#sixth {
-    background-image: url(../img/work/pantry_02.jpg);
-    background-size: cover;
+#_6 {
+    background-image: url(../img/projects/the_fairway_apartments_olcott_mw/thumbnail_all_projects.jpg);
+}
+
+#_7 {
+    background-image: url(../img/projects/the_proposed_amusement_park/thumbnail_all_projects.jpg);
+}
+
+#_8 {
+    background-image: url(../img/projects/the_proposed_beira_office_project/thumbnail_all_projects.jpg);
+}
+
+#_9 {
+    background-image: url(../img/projects/akbar_tea_nawam_mawatha/thumbnail_all_projects.jpg);
+}
+
+#_10 {
+    background-image: url(../img/projects/aqua_vista_by_fairway_at_galle/thumbnail_all_projects.jpg);
+}
+
+#_11 {
+    background-image: url(../img/projects/bar_at_grandeeza_hotel_negombo/thumbnail_all_projects.jpg);
+}
+
+#_12 {
+    background-image: url(../img/projects/bricksgate_wattala/thumbnail_all_projects.jpg);
+}
+
+#_13 {
+    background-image: url(../img/projects/califonia_grill_at_galadari_hotel/thumbnail_all_projects.jpg);
+}
+
+#_14 {
+    background-image: url(../img/projects/coorg_hotel_at_india/thumbnail_all_projects.jpg);
+}
+
+#_15 {
+    background-image: url(../img/projects/fairway_kirulapana/thumbnail_all_projects.jpg);
+}
+
+#_16 {
+    background-image: url(../img/projects/fairway_kurunegala/thumbnail_all_projects.jpg);
+}
+
+#_17 {
+    background-image: url(../img/projects/leon_house/thumbnail_all_projects.jpg);
+}
+
+#_18 {
+    background-image: url(../img/projects/negombo_house_2/thumbnail_all_projects.jpg);
+}
+
+#_19 {
+    background-image: url(../img/projects/office_interior_at_otto_bock/thumbnail_all_projects.jpg);
+}
+
+#_20 {
+    background-image: url(../img/projects/farmhouse/thumbnail_all_projects.jpg);
+}
+
+#_21 {
+    background-image: url(../img/projects/fort_hotel/thumbnail_all_projects.jpg);
+}
+
+#_22 {
+    background-image: url(../img/projects/icc_apartment_oceanfront_condominiums/thumbnail_all_projects.jpg);
+}
+
+#_23 {
+    background-image: url(../img/projects/mack_air_ticketing_office/thumbnail_all_projects.jpg);
+}
+
+#_24 {
+    background-image: url(../img/projects/nilaveli_hotel/thumbnail_all_projects.jpg);
+}
+
+#_25 {
+    background-image: url(../img/projects/nitf_office/thumbnail_all_projects.jpg);
+}
+
+#_26 {
+    background-image: url(../img/projects/park_residence_nugegoda/thumbnail_all_projects.jpg);
+}
+
+#_27 {
+    background-image: url(../img/projects/rancrisp_cashew_store_shangri-la/thumbnail_all_projects.jpg);
+}
+
+#_28 {
+    background-image: url(../img/projects/ranscrip_crescat/thumbnail_all_projects.jpg);
+}
+
+#_29 {
+    background-image: url(../img/projects/ruhuna_hospital/thumbnail_all_projects.jpg);
 }

@@ -1,3 +1,5 @@
+<!-- Copyright 2019 CyberOctane -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +12,7 @@
     <meta name="description" content="TDK Architects Landing Page">
     <meta name="keywords" content="TDK, TDK Architects, Landing Page Template">
 
+    <!-- Page Title -->
     <title>TDK | All Projects</title>
 
     <!-- Favicon -->
@@ -19,6 +22,7 @@
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Google Fonts API -->
@@ -69,195 +73,345 @@
     <!-- NavBar End -->
 
     <!-- Page Heading -->
-    <div class="page-heading">
-        <h1>OUR PROJECTS</h1>
-    </div>
-    <div id="filter-menu">
-        <div id="filter-select">
-            <button id="sector" class="filter dropbtn">
-                SECTOR:
-                <h3 id="sector-btn">SECTOR</h3>
-            </button>
-            <button id="service" class="filter dropbtn">
-                SERVICE:
-                <h3 id="service-btn">SERVICE</h3>
-            </button>
-            <button id="all" class="dropbtn">
-                <a href="all-projects.html" style="color:black">ALL</a>
-            </button>
-        </div>
-        <div id="sector-menu" class="dropmenu">
-            <a href="#" id="project-item" class="sector-class">ALL</a>
-            <a href="#" id="sector-01" class="sector-class">SECTOR 01</a>
-            <a href="#" id="sector-02" class="sector-class">SECTOR 02</a>
-            <a href="#" id="sector-03" class="sector-class ">SECTOR 03</a>
-        </div>
-        <div id="service-menu" class="dropmenu">
-            <a href="#" id="project-item" class="service-class">ALL</a>
-            <a href="#" id="service-01" class="service-class">SERVICE 01</a>
-            <a href="#" id="service-02" class="service-class">SERVICE 02</a>
-            <a href="#" id="service-03" class="service-class">SERVICE 03</a>
+    <div id="page-heading" class="page-heading">
+        <!-- <h1>OUR PROJECTS</h1> -->
+        <div id="filter-menu">
+            <div id="filter-select">
+                <button id="sector" class="filter dropbtn">
+                    SECTOR <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <h3 id="sector-btn">SECTOR</h3>
+                </button>
+                <button id="service" class="filter dropbtn">
+                    SERVICE <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <h3 id="service-btn">SERVICE</h3>
+                </button>
+                <button id="all" class="dropbtn">
+                    <a href="all-projects.html" style="color:black">ALL</a>
+                </button>
+            </div>
+            <div id="sector-menu" class="dropmenu">
+                <a href="#" id="project-item" class="sector-class">All</a>
+                <a href="#" id="sector-residential" class="sector-class">Residential</a>
+                <a href="#" id="sector-commercial" class="sector-class ">Commercial</a>
+                <a href="#" id="sector-apartment" class="sector-class ">Apartment</a>
+                <a href="#" id="sector-recreational" class="sector-class ">Recreational</a>
+                <a href="#" id="sector-apartment" class="sector-class ">Apartment</a>
+                <a href="#" id="sector-hotel" class="sector-class ">Hotel</a>
+            </div>
+            <div id="service-menu" class="dropmenu">
+                <a href="#" id="project-item" class="service-class">All</a>
+                <a href="#" id="service-visualization" class="service-class">Visualization</a>
+                <a href="#" id="service-interior" class="service-class">Interior Design</a>
+                <a href="#" id="service-animation" class="service-class">Animation</a>
+            </div>
         </div>
     </div>
 
     <!-- Portfolio Starts -->
 
     <div class="projects-grid">
-        <div id="first" class="project-item sector-01 service-01">
+        <div id="_1" class="project-item sector-residential service-visualization img-center">
             <div class="project-overlay right-overlay">
-                <h1 class="prjctnme">PROJECT<br>NAME</h1>
+                <h1 class="project-name">PROPOSED 4 UNIT HOUSE PROJECT</h1>
                 <div>
-                    <h3>TECHTONIC ARCHITECT</h3>
                     <hr>
-                    <h4>LANDMARK DEVELOPERS</h4>
+                    <h4>UNKNOWN CLIENT</h4>
                 </div>
             </div>
-            <a href="projectview.html"><span></span></a>
+            <a href="./projects/proposed_4_unit_house_project.html"><span></span></a>
         </div>
-        <div id="second" class="project-item sector-03 service-01" style="background-color: yellow;">
-            <div class="project-overlay left-overlay">
-                <h1 class="prjctnme">PROJECT<br>NAME</h1>
-                <div>
-                    <h3>TECHTONIC ARCHITECT</h3>
-                    <hr>
-                    <h4>LANDMARK DEVELOPERS</h4>
-                </div>
-            </div>
-            <a href="projectview.html"><span></span></a>
-        </div>
-        <div id="third" class="project-item sector-03 service-01" style="background-color: blue;">
+        <div id="_2" class="project-item sector-residential service-visualization img-center">
             <div class="project-overlay right-overlay">
-                <h1 class="prjctnme">PROJECT<br>NAME</h1>
+                <h1 class="project-name">PROPOSED CUBIC HOUSE PROJECT</h1>
                 <div>
-                    <h3>TECHTONIC ARCHITECT</h3>
                     <hr>
                     <h4>LANDMARK DEVELOPERS</h4>
                 </div>
             </div>
-            <a href="projectview.html"><span></span></a>
+            <a href="./projects/proposed_cubic_house_project.html"><span></span></a>
         </div>
-        <div id="fourth" class="project-item sector-01 service-01">
+        <div id="_3" class="project-item sector-residential service-visualization img-center">
             <div class="project-overlay right-overlay">
-                <h1 class="prjctnme">PROJECT<br>NAME</h1>
+                <h1 class="project-name">PROPOSED LOW COST HOUSE PROJECT</h1>
                 <div>
-                    <h3>TECHTONIC ARCHITECT</h3>
                     <hr>
                     <h4>LANDMARK DEVELOPERS</h4>
                 </div>
             </div>
-            <a href="projectview.html"><span></span></a>
+            <a href="./projects/proposed_low_cost_house_project.html"><span></span></a>
         </div>
-        <div id="fifth" class="project-item sector-03 service-01" style="background-color: yellow;">
-            <div class="project-overlay left-overlay">
-                <h1 class="prjctnme">PROJECT<br>NAME</h1>
-                <div>
-                    <h3>TECHTONIC ARCHITECT</h3>
-                    <hr>
-                    <h4>LANDMARK DEVELOPERS</h4>
-                </div>
-            </div>
-            <a href="projectview.html"><span></span></a>
-        </div>
-        <div id="sixth" class="project-item sector-03 service-01" style="background-color: blue;">
+        <div id="_4" class="project-item sector-commercial service-visualization service-interior img-center">
             <div class="project-overlay right-overlay">
-                <h1 class="prjctnme">PROJECT<br>NAME</h1>
+                <h1 class="project-name">AKBAR TEA SHOP AT PEARL OF ASIA</h1>
                 <div>
-                    <h3>TECHTONIC ARCHITECT</h3>
                     <hr>
-                    <h4>LANDMARK DEVELOPERS</h4>
+                    <h4>J.N.INTERIORS (PVT) LTD</h4>
                 </div>
             </div>
-            <a href="projectview.html"><span></span></a>
+            <a href="./projects/akbar_tea_shop_at_pearl_of_asia.html"><span></span></a>
+        </div>
+        <div id="_5" class="project-item sector-apartment service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">THE FAIRWAY APARTMENTS AT KOSWATTE</h1>
+                <div>
+                    <hr>
+                    <h4>FAIRWAY URBAN HOMES (PVT) LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/the_fairway_apartments_koswatte.html"><span></span></a>
+        </div>
+        <div id="_6" class="project-item sector-apartment service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">THE FAIRWAY APARTMENTS AT OLCOTT MW</h1>
+                <div>
+                    <hr>
+                    <h4>FAIRWAY HOLDINGS</h4>
+                </div>
+            </div>
+            <a href="./projects/the_fairway_apartments_olcott_mw.html"><span></span></a>
+        </div>
+        <div id="_7" class="project-item sector-recreational service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">THE PROPOSED AMUSEMENT PARK</h1>
+                <div>
+                    <hr>
+                    <h4>ACS INTEGRATED (PVT) LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/the_proposed_amusement_park.html"><span></span></a>
+        </div>
+        <div id="_8" class="project-item sector-commercial service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">THE PROPOSED BEIRA OFFICE PROJECT</h1>
+                <div>
+                    <hr>
+                    <h4>MOOT MANOR PVT LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/the_proposed_beira_office_project.html"><span></span></a>
+        </div>
+        <div id="_9" class="project-item sector-commercial service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">AKBAR TEA NAWAM MAWATHA</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/akbar_tea_nawam_mawatha.html"><span></span></a>
+        </div>
+        <div id="_10" class="project-item sector-apartment service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">AQUA VISTA BY FAIRWAY</h1>
+                <div>
+                    <hr>
+                    <h4>FAIRWAY HOLDINGS</h4>
+                </div>
+            </div>
+            <a href="./projects/aqua_vista_by_fairway_at_galle.html"><span></span></a>
+        </div>
+        <div id="_11" class="project-item sector-hotel service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">BAR AT GRANDEEZA HOTEL</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/bar_at_grandeeza_hotel_negombo.html"><span></span></a>
+        </div>
+        <div id="_12" class="project-item sector-apartment service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">BRICKSGATE</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/bricksgate_wattala.html"><span></span></a>
+        </div>
+        <div id="_13" class="project-item sector-hotel service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">CALIFONIA GRILL AT GALADARI HOTEL</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/califonia_grill_at_galadari_hotel.html"><span></span></a>
+        </div>
+        <div id="_14" class="project-item sector-hotel service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">COORG HOTEL</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/coorg_hotel_at_india.html"><span></span></a>
+        </div>
+        <div id="_15" class="project-item sector-apartment service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">FAIRWAY KIRULAPANA</h1>
+                <div>
+                    <hr>
+                    <h4>FAIRWAY HOLDINGS</h4>
+                </div>
+            </div>
+            <a href="./projects/fairway_kirulapana.html"><span></span></a>
+        </div>
+        <div id="_16" class="project-item sector-apartment service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">FAIRWAY KURUNEGALA</h1>
+                <div>
+                    <hr>
+                    <h4>FAIRWAY HOLDINGS</h4>
+                </div>
+            </div>
+            <a href="./projects/fairway_kurunegala.html"><span></span></a>
+        </div>
+        <div id="_17" class="project-item sector-residential service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">LEON HOUSE</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/leon_house.html"><span></span></a>
+        </div>
+        <div id="_18" class="project-item sector-residential service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">NEGOMBO HOUSE</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/negombo_house_2.html"><span></span></a>
+        </div>
+        <div id="_19" class="project-item sector-commercial service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">OTTOBOCK</h1>
+                <div>
+                    <hr>
+                    <h4>J.N.INTERIORS (PVT) LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/office_interior_at_otto_bock.html"><span></span></a>
+        </div>
+        <div id="_20" class="project-item sector-residential service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">FARMHOUSE</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/farmhouse.html"><span></span></a>
+        </div>
+        <div id="_21" class="project-item sector-hotel service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">FORT HOTEL</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/fort_hotel.html"><span></span></a>
+        </div>
+        <div id="_22" class="project-item sector-apartment service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">ICC APARTMENT</h1>
+                <div>
+                    <hr>
+                    <h4>INTERNATIONAL CONSTRUCTION CONSORTIUM (PVT) LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/icc_apartment_oceanfront_condominiums.html"><span></span></a>
+        </div>
+        <div id="_23" class="project-item sector-commercial service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">MACK AIR TICKETING OFFICE</h1>
+                <div>
+                    <hr>
+                    <h4>J.N.INTERIORS (PVT) LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/mack_air_ticketing_office.html"><span></span></a>
+        </div>
+        <div id="_24" class="project-item sector-hotel service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">NILAVELI HOTEL</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/nilaveli_hotel.html"><span></span></a>
+        </div>
+        <div id="_25" class="project-item sector-commercial service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">NITF OFFICE</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/nitf_office.html"><span></span></a>
+        </div>
+        <div id="_26" class="project-item sector-apartment service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">PARK RESIDENCE NUGEGODA</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/park_residence_nugegoda.html"><span></span></a>
+        </div>
+        <div id="_27" class="project-item sector-commercial service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">RANCRISP CASHEW STORE SHANGRI-LA</h1>
+                <div>
+                    <hr>
+                    <h4>J.N.INTERIORS (PVT) LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/rancrisp_cashew_store_shangri-la.html"><span></span></a>
+        </div>
+        <div id="_28" class="project-item sector-commercial service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">RANSCRIP CRESCAT</h1>
+                <div>
+                    <hr>
+                    <h4>J.N.INTERIORS (PVT) LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/ranscrip_crescat.html"><span></span></a>
+        </div>
+        <div id="_29" class="project-item sector-commercial service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">RUHUNA HOSPITAL</h1>
+                <div>
+                    <hr>
+                    <h4>UNKNOWN CLIENT</h4>
+                </div>
+            </div>
+            <a href="./projects/ruhuna_hospital.html"><span></span></a>
         </div>
     </div>
 
     <!-- Portfolio Ends -->
 
-    <script>
-        var sector;
-        var service;
-        var openFilter;
-
-        select("sector");
-        select("service");
-        all();
-
-        // show dropdown-menu on click 
-        var filters = document.getElementsByClassName("filter");
-        for (i = 0; i < filters.length; i++) {
-            filters[i].addEventListener('click', function (e) {
-                if (openFilter !== undefined && openFilter !== this) {
-                    toggle_menu();
-                    openFilter = this;
-                    toggle_menu();
-                } else if (openFilter === this) {
-                    toggle_menu();
-                    openFilter = undefined;
-                } else {
-                    openFilter = this;
-                    toggle_menu();
-                }
-                e.stopPropagation();
-            })
-        }
-
-        //toggle menu
-        function toggle_menu() {
-            document.getElementById(openFilter.id + "-menu").classList.toggle("expand-menu");
-            openFilter.classList.toggle("filter-open");
-        }
-
-        //close open menu on click on document
-        document.addEventListener('click', function () {
-            toggle_menu();
-            openFilter = undefined;;
-            //alert(openMenu);
-        })
-
-
-        //dropdown-menu - select category to show
-        function select(category, ) {
-            var menu = document.getElementById(category + "-menu");
-            menu.addEventListener('click', function (e) {
-                if (e.target.tagName != 'A') {
-                    e.stopPropagation();
-                    return;
-                } else {
-                    window[category] = e.target.id;
-                    //set button text
-                    document.getElementById(category + "-btn").textContent = e.target.textContent;
-                    filter();
-                }
-
-            }, false);
-        }
-
-        //'all' button - show all projects
-        document.getElementById("all").onclick = function () {
-            all()
-        };
-
-        function all() {
-            sector = "project-item";
-            service = "project-item";
-            document.getElementById("service-btn").textContent = "All";
-            document.getElementById("sector-btn").textContent = "All";
-            filter();
-        }
-
-        //filter gallery & set button text by selected categories
-        function filter() {
-            var all = document.getElementsByClassName("project-item");
-            for (i = 0; i < all.length; i++) {
-                all[i].classList.remove("show");
-                if (all[i].classList.contains(sector) && all[i].classList.contains(service)) {
-                    all[i].classList.add("show");
-                }
-            }
-        }
-    </script>
-
+    <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="./js/filter_projects.js"></script>
 
 </body>
 
