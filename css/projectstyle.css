@@ -8,18 +8,6 @@
     width: 60px !important;
 }
 
-.close-button {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    font-size: 50px;
-    color: #000000 !important;
-    padding-top: 8px !important;
-}
-
-.close-button:hover {
-    color: #f5d010 !important;
-}
-
 .section {
     margin-top: 52px;
 }

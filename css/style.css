@@ -180,6 +180,18 @@ hr {
     background-position: center center;
 }
 
+.close-button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    color: #000000 !important;
+    padding-top: 8px !important;
+}
+
+.close-button:hover {
+    color: #f5d010 !important;
+}
+
 /* ==========================================================================
    3. Loader Styling
    ========================================================================== */
@@ -261,8 +273,9 @@ hr {
 }
 
 .navbar-default.past-main {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgb(255, 255, 255);
     height: 8.5vh;
+    z-index: 100;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
@@ -751,7 +764,7 @@ hr {
 
 .img {
     height: 100%;
-    background-image: url(../img/about_us_section/studio-bnw.jpg);
+    background-image: url(../img/about_us_section/samuelzeller.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1491,6 +1504,7 @@ hr {
 }
 
 .fade h1 {
+    font-family: 'Roboto Condensed', sans-serif;
     color: #000000;
     font-weight: 900;
     font-size: 4vw;
@@ -1572,7 +1586,6 @@ hr {
     }
 
     .fade h1 {
-        font-weight: 400;
         font-size: 3vh;
     }
 

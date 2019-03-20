@@ -38,6 +38,18 @@
 
 <body>
 
+    <!-- Loading Start -->
+    <div id="loader">
+        <div class="loader-container">
+            <div class="lds-facebook">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loading End -->
+
     <!-- NavBar Start -->
     <nav id="mainNav" class="navbar navbar-default past-main navbar-fixed-top">
         <div class="container">
@@ -54,13 +66,7 @@
                 <div class="hamburger-menu" id="hamburger-menu">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a onclick="openSlideMenu()">
-                                <svg width="25" height="30">
-                                    <path d="M0,5 30,5" stroke-width="2" />
-                                    <path d="M0,12 30,12" stroke-width="2" />
-                                    <path d="M0,19 30,19" stroke-width="2" />
-                                </svg>
-                            </a>
+                            <a class="close-button" href="index.html">&times;</a>
                         </li>
                     </ul>
                 </div>
@@ -85,8 +91,8 @@
                     SERVICE <i class="fa fa-caret-down" aria-hidden="true"></i>
                     <h3 id="service-btn">SERVICE</h3>
                 </button>
-                <button id="all" class="dropbtn">
-                    <a href="all-projects.html" style="color:black">ALL</a>
+                <button id="all" class="filter dropbtn">
+                    <a href="all-projects.html">ALL</a>
                 </button>
             </div>
             <div id="sector-menu" class="dropmenu">
@@ -110,15 +116,15 @@
     <!-- Portfolio Starts -->
 
     <div class="projects-grid">
-        <div id="_1" class="project-item sector-residential service-visualization img-center">
+        <div id="_1" class="project-item sector-apartment service-visualization service-interior img-center">
             <div class="project-overlay right-overlay">
-                <h1 class="project-name">PROPOSED 4 UNIT HOUSE PROJECT</h1>
+                <h1 class="project-name">AQUA VISTA BY FAIRWAY</h1>
                 <div>
                     <hr>
-                    <h4>UNKNOWN CLIENT</h4>
+                    <h4>FAIRWAY HOLDINGS</h4>
                 </div>
             </div>
-            <a href="./projects/proposed_4_unit_house_project.html"><span></span></a>
+            <a href="./projects/aqua_vista_by_fairway_at_galle.html"><span></span></a>
         </div>
         <div id="_2" class="project-item sector-residential service-visualization img-center">
             <div class="project-overlay right-overlay">
@@ -130,137 +136,17 @@
             </div>
             <a href="./projects/proposed_cubic_house_project.html"><span></span></a>
         </div>
-        <div id="_3" class="project-item sector-residential service-visualization img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">PROPOSED LOW COST HOUSE PROJECT</h1>
-                <div>
-                    <hr>
-                    <h4>LANDMARK DEVELOPERS</h4>
-                </div>
-            </div>
-            <a href="./projects/proposed_low_cost_house_project.html"><span></span></a>
-        </div>
-        <div id="_4" class="project-item sector-commercial service-visualization service-interior img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">AKBAR TEA SHOP AT PEARL OF ASIA</h1>
-                <div>
-                    <hr>
-                    <h4>J.N.INTERIORS (PVT) LTD</h4>
-                </div>
-            </div>
-            <a href="./projects/akbar_tea_shop_at_pearl_of_asia.html"><span></span></a>
-        </div>
-        <div id="_5" class="project-item sector-apartment service-visualization service-interior img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">THE FAIRWAY APARTMENTS AT KOSWATTE</h1>
-                <div>
-                    <hr>
-                    <h4>FAIRWAY URBAN HOMES (PVT) LTD</h4>
-                </div>
-            </div>
-            <a href="./projects/the_fairway_apartments_koswatte.html"><span></span></a>
-        </div>
-        <div id="_6" class="project-item sector-apartment service-visualization service-interior img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">THE FAIRWAY APARTMENTS AT OLCOTT MW</h1>
-                <div>
-                    <hr>
-                    <h4>FAIRWAY HOLDINGS</h4>
-                </div>
-            </div>
-            <a href="./projects/the_fairway_apartments_olcott_mw.html"><span></span></a>
-        </div>
-        <div id="_7" class="project-item sector-recreational service-visualization img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">THE PROPOSED AMUSEMENT PARK</h1>
-                <div>
-                    <hr>
-                    <h4>ACS INTEGRATED (PVT) LTD</h4>
-                </div>
-            </div>
-            <a href="./projects/the_proposed_amusement_park.html"><span></span></a>
-        </div>
-        <div id="_8" class="project-item sector-commercial service-visualization img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">THE PROPOSED BEIRA OFFICE PROJECT</h1>
-                <div>
-                    <hr>
-                    <h4>MOOT MANOR PVT LTD</h4>
-                </div>
-            </div>
-            <a href="./projects/the_proposed_beira_office_project.html"><span></span></a>
-        </div>
-        <div id="_9" class="project-item sector-commercial service-visualization service-interior img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">AKBAR TEA NAWAM MAWATHA</h1>
-                <div>
-                    <hr>
-                    <h4>UNKNOWN CLIENT</h4>
-                </div>
-            </div>
-            <a href="./projects/akbar_tea_nawam_mawatha.html"><span></span></a>
-        </div>
-        <div id="_10" class="project-item sector-apartment service-visualization service-interior img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">AQUA VISTA BY FAIRWAY</h1>
-                <div>
-                    <hr>
-                    <h4>FAIRWAY HOLDINGS</h4>
-                </div>
-            </div>
-            <a href="./projects/aqua_vista_by_fairway_at_galle.html"><span></span></a>
-        </div>
-        <div id="_11" class="project-item sector-hotel service-visualization service-interior img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">BAR AT GRANDEEZA HOTEL</h1>
-                <div>
-                    <hr>
-                    <h4>UNKNOWN CLIENT</h4>
-                </div>
-            </div>
-            <a href="./projects/bar_at_grandeeza_hotel_negombo.html"><span></span></a>
-        </div>
-        <div id="_12" class="project-item sector-apartment service-visualization service-interior img-center">
+        <div id="_3" class="project-item sector-apartment service-visualization service-interior img-center">
             <div class="project-overlay right-overlay">
                 <h1 class="project-name">BRICKSGATE</h1>
                 <div>
                     <hr>
-                    <h4>UNKNOWN CLIENT</h4>
+                    <h4>MITKO GROUPS</h4>
                 </div>
             </div>
             <a href="./projects/bricksgate_wattala.html"><span></span></a>
         </div>
-        <div id="_13" class="project-item sector-hotel service-visualization img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">CALIFONIA GRILL AT GALADARI HOTEL</h1>
-                <div>
-                    <hr>
-                    <h4>UNKNOWN CLIENT</h4>
-                </div>
-            </div>
-            <a href="./projects/califonia_grill_at_galadari_hotel.html"><span></span></a>
-        </div>
-        <div id="_14" class="project-item sector-hotel service-visualization img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">COORG HOTEL</h1>
-                <div>
-                    <hr>
-                    <h4>UNKNOWN CLIENT</h4>
-                </div>
-            </div>
-            <a href="./projects/coorg_hotel_at_india.html"><span></span></a>
-        </div>
-        <div id="_15" class="project-item sector-apartment service-visualization img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">FAIRWAY KIRULAPANA</h1>
-                <div>
-                    <hr>
-                    <h4>FAIRWAY HOLDINGS</h4>
-                </div>
-            </div>
-            <a href="./projects/fairway_kirulapana.html"><span></span></a>
-        </div>
-        <div id="_16" class="project-item sector-apartment service-visualization service-interior img-center">
+        <div id="_4" class="project-item sector-apartment service-visualization service-interior img-center">
             <div class="project-overlay right-overlay">
                 <h1 class="project-name">FAIRWAY KURUNEGALA</h1>
                 <div>
@@ -270,57 +156,97 @@
             </div>
             <a href="./projects/fairway_kurunegala.html"><span></span></a>
         </div>
-        <div id="_17" class="project-item sector-residential service-visualization img-center">
+        <div id="_5" class="project-item sector-apartment service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">THE FAIRWAY APARTMENTS AT OLCOTT MAWATHA</h1>
+                <div>
+                    <hr>
+                    <h4>FAIRWAY HOLDINGS</h4>
+                </div>
+            </div>
+            <a href="./projects/the_fairway_apartments_olcott_mw.html"><span></span></a>
+        </div>
+        <div id="_6" class="project-item sector-residential service-visualization img-center">
             <div class="project-overlay right-overlay">
                 <h1 class="project-name">LEON HOUSE</h1>
                 <div>
                     <hr>
-                    <h4>UNKNOWN CLIENT</h4>
+                    <h4>MICD</h4>
                 </div>
             </div>
             <a href="./projects/leon_house.html"><span></span></a>
         </div>
-        <div id="_18" class="project-item sector-residential service-visualization service-interior img-center">
+        <div id="_7" class="project-item sector-residential service-visualization service-interior img-center">
             <div class="project-overlay right-overlay">
                 <h1 class="project-name">NEGOMBO HOUSE</h1>
-                <div>
-                    <hr>
-                    <h4>UNKNOWN CLIENT</h4>
-                </div>
-            </div>
-            <a href="./projects/negombo_house_2.html"><span></span></a>
-        </div>
-        <div id="_19" class="project-item sector-commercial service-visualization service-interior img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">OTTOBOCK</h1>
                 <div>
                     <hr>
                     <h4>J.N.INTERIORS (PVT) LTD</h4>
                 </div>
             </div>
-            <a href="./projects/office_interior_at_otto_bock.html"><span></span></a>
+            <a href="./projects/negombo_house_2.html"><span></span></a>
         </div>
-        <div id="_20" class="project-item sector-residential service-visualization img-center">
+        <div id="_8" class="project-item sector-commercial service-visualization service-interior img-center">
             <div class="project-overlay right-overlay">
-                <h1 class="project-name">FARMHOUSE</h1>
+                <h1 class="project-name">OTTOBOCK</h1>
                 <div>
                     <hr>
-                    <h4>UNKNOWN CLIENT</h4>
+                    <h4>OTTO BOCK HOLDING GMBH</h4>
                 </div>
             </div>
-            <a href="./projects/farmhouse.html"><span></span></a>
+            <a href="./projects/office_interior_at_otto_bock.html"><span></span></a>
         </div>
-        <div id="_21" class="project-item sector-hotel service-visualization img-center">
+        <div id="_9" class="project-item sector-apartment service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">PARK RESIDENCE NUGEGODA</h1>
+                <div>
+                    <hr>
+                    <h4>LANDMARK DEVELOPERS</h4>
+                </div>
+            </div>
+            <a href="./projects/park_residence_nugegoda.html"><span></span></a>
+        </div>
+        <div id="_10" class="project-item sector-residential service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">SAUDI AMBASSADOR RESIDENCE</h1>
+                <div>
+                    <hr>
+                    <h4>J.N.INTERIORS (PVT) LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/saudi_ambassador_residence.html"><span></span></a>
+        </div>
+        <div id="_11" class="project-item sector-commercial service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">THE PROPOSED BEIRA OFFICE PROJECT</h1>
+                <div>
+                    <hr>
+                    <h4>MOOT MANOR PVT LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/the_proposed_beira_office_project.html"><span></span></a>
+        </div>
+        <div id="_12" class="project-item sector-residential service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">PROPOSED LOW COST HOUSE PROJECT</h1>
+                <div>
+                    <hr>
+                    <h4>LANDMARK DEVELOPERS</h4>
+                </div>
+            </div>
+            <a href="./projects/proposed_low_cost_house_project.html"><span></span></a>
+        </div>
+        <div id="_13" class="project-item sector-hotel service-visualization img-center">
             <div class="project-overlay right-overlay">
                 <h1 class="project-name">FORT HOTEL</h1>
                 <div>
                     <hr>
-                    <h4>UNKNOWN CLIENT</h4>
+                    <h4>PWA ARCHITECTS</h4>
                 </div>
             </div>
             <a href="./projects/fort_hotel.html"><span></span></a>
         </div>
-        <div id="_22" class="project-item sector-apartment service-visualization img-center">
+        <div id="_14" class="project-item sector-apartment service-visualization img-center">
             <div class="project-overlay right-overlay">
                 <h1 class="project-name">ICC APARTMENT</h1>
                 <div>
@@ -330,75 +256,275 @@
             </div>
             <a href="./projects/icc_apartment_oceanfront_condominiums.html"><span></span></a>
         </div>
-        <div id="_23" class="project-item sector-commercial service-visualization service-interior img-center">
-            <div class="project-overlay right-overlay">
-                <h1 class="project-name">MACK AIR TICKETING OFFICE</h1>
-                <div>
-                    <hr>
-                    <h4>J.N.INTERIORS (PVT) LTD</h4>
-                </div>
-            </div>
-            <a href="./projects/mack_air_ticketing_office.html"><span></span></a>
-        </div>
-        <div id="_24" class="project-item sector-hotel service-visualization img-center">
+        <div id="_15" class="project-item sector-hotel service-visualization img-center">
             <div class="project-overlay right-overlay">
                 <h1 class="project-name">NILAVELI HOTEL</h1>
                 <div>
                     <hr>
-                    <h4>UNKNOWN CLIENT</h4>
+                    <h4>PWA ARCHITECTS</h4>
                 </div>
             </div>
             <a href="./projects/nilaveli_hotel.html"><span></span></a>
         </div>
-        <div id="_25" class="project-item sector-commercial service-visualization service-interior img-center">
+        <div id="_16" class="project-item sector-commercial service-visualization service-interior img-center">
             <div class="project-overlay right-overlay">
                 <h1 class="project-name">NITF OFFICE</h1>
                 <div>
                     <hr>
-                    <h4>UNKNOWN CLIENT</h4>
+                    <h4>J.N.INTERIORS (PVT) LTD</h4>
                 </div>
             </div>
             <a href="./projects/nitf_office.html"><span></span></a>
         </div>
-        <div id="_26" class="project-item sector-apartment service-visualization img-center">
+        <div id="_17" class="project-item sector-apartment service-visualization service-interior img-center">
             <div class="project-overlay right-overlay">
-                <h1 class="project-name">PARK RESIDENCE NUGEGODA</h1>
+                <h1 class="project-name">THE FAIRWAY APARTMENTS AT KOSWATTE</h1>
                 <div>
                     <hr>
-                    <h4>UNKNOWN CLIENT</h4>
+                    <h4>FAIRWAY HOLDINGS/h4>
                 </div>
             </div>
-            <a href="./projects/park_residence_nugegoda.html"><span></span></a>
+            <a href="./projects/the_fairway_apartments_koswatte.html"><span></span></a>
         </div>
-        <div id="_27" class="project-item sector-commercial service-visualization service-interior img-center">
+        <div id="_18" class="project-item sector-recreational service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">THE PROPOSED AMUSEMENT PARK</h1>
+                <div>
+                    <hr>
+                    <h4>ACS INTEGRATED (PVT) LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/the_proposed_amusement_park.html"><span></span></a>
+        </div>
+        <div id="_19" class="project-item sector-residential service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">PROPOSED 4 UNIT HOUSE PROJECT</h1>
+                <div>
+                    <hr>
+                    <h4>TECTONIK ARCHITECTS</h4>
+                </div>
+            </div>
+            <a href="./projects/proposed_4_unit_house_project.html"><span></span></a>
+        </div>
+        <div id="_20" class="project-item sector-hotel service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">BAR AT GRANDEEZA HOTEL</h1>
+                <div>
+                    <hr>
+                    <h4>GRANDEEZA HOTEL</h4>
+                </div>
+            </div>
+            <a href="./projects/bar_at_grandeeza_hotel_negombo.html"><span></span></a>
+        </div>
+        <div id="_21" class="project-item sector-apartment service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">STUDENT APARTMENT</h1>
+                <div>
+                    <hr>
+                    <h4>TECTONIK ARCHITECTS</h4>
+                </div>
+            </div>
+            <a href="./projects/student_apartment.html"><span></span></a>
+        </div>
+        <div id="_22" class="project-item sector-hotel service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">CALIFONIA GRILL AT GALADARI HOTEL</h1>
+                <div>
+                    <hr>
+                    <h4>GALADARI HOTEL</h4>
+                </div>
+            </div>
+            <a href="./projects/califonia_grill_at_galadari_hotel.html"><span></span></a>
+        </div>
+        <div id="_23" class="project-item sector-hotel service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">COORG HOTEL</h1>
+                <div>
+                    <hr>
+                    <h4>COORG HOTEL INDIA</h4>
+                </div>
+            </div>
+            <a href="./projects/coorg_hotel_at_india.html"><span></span></a>
+        </div>
+        <div id="_24" class="project-item sector-apartment service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">FAIRWAY KIRULAPANA</h1>
+                <div>
+                    <hr>
+                    <h4>FAIRWAY HOLDINGS</h4>
+                </div>
+            </div>
+            <a href="./projects/fairway_kirulapana.html"><span></span></a>
+        </div>
+        <div id="_25" class="project-item sector-commercial service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">STUDIOHAUTE</h1>
+                <div>
+                    <hr>
+                    <h4>PWA ARCHITECTS</h4>
+                </div>
+            </div>
+            <a href="./projects/studiohaute.html"><span></span></a>
+        </div>
+        <div id="_26" class="project-item sector-residential service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">FARMHOUSE</h1>
+                <div>
+                    <hr>
+                    <h4>PWA ARCHITECTS</h4>
+                </div>
+            </div>
+            <a href="./projects/farmhouse.html"><span></span></a>
+        </div>
+        <div id="_27" class="project-item sector-apartment service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">447 APARTMENT AT UNION PLACE</h1>
+                <div>
+                    <hr>
+                    <h4>PWA ARCHITECTS</h4>
+                </div>
+            </div>
+            <a href="./projects/447_apartment_at_union_place.html"><span></span></a>
+        </div>
+        <div id="_28" class="project-item sector-hotel service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">AVANI HOTEL BENTHOTA</h1>
+                <div>
+                    <hr>
+                    <h4>PWA ARCHITECTS</h4>
+                </div>
+            </div>
+            <a href="./projects/avani_hotel_bentota.html"><span></span></a>
+        </div>
+        <div id="_29" class="project-item sector-hotel service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">KANDY CITY HOTEL</h1>
+                <div>
+                    <hr>
+                    <h4>PWA ARCHITECTS</h4>
+                </div>
+            </div>
+            <a href="./projects/kandy_city_hotel.html"><span></span></a>
+        </div>
+        <div id="_30" class="project-item sector-residential service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">PRIVATE RESIDENCE AT INDIA</h1>
+                <div>
+                    <hr>
+                    <h4>PWA ARCHITECTS</h4>
+                </div>
+            </div>
+            <a href="./projects/private_residence_at_india.html"><span></span></a>
+        </div>
+        <div id="_31" class="project-item sector-commercial service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">MACK AIR TICKETING OFFICE</h1>
+                <div>
+                    <hr>
+                    <h4>JOHN KEELLS HOLDINGS</h4>
+                </div>
+            </div>
+            <a href="./projects/mack_air_ticketing_office.html"><span></span></a>
+        </div>
+        <div id="_32" class="project-item sector-commercial service-visualization service-interior img-center">
             <div class="project-overlay right-overlay">
                 <h1 class="project-name">RANCRISP CASHEW STORE SHANGRI-LA</h1>
                 <div>
                     <hr>
-                    <h4>J.N.INTERIORS (PVT) LTD</h4>
+                    <h4>RANSCRIP CASHEW</h4>
                 </div>
             </div>
             <a href="./projects/rancrisp_cashew_store_shangri-la.html"><span></span></a>
         </div>
-        <div id="_28" class="project-item sector-commercial service-visualization service-interior img-center">
+        <div id="_33" class="project-item sector-commercial service-visualization service-interior img-center">
             <div class="project-overlay right-overlay">
                 <h1 class="project-name">RANSCRIP CRESCAT</h1>
+                <div>
+                    <hr>
+                    <h4>RANSCRIP CASHEW</h4>
+                </div>
+            </div>
+            <a href="./projects/ranscrip_crescat.html"><span></span></a>
+        </div>
+        <div id="_34" class="project-item sector-commercial service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">RUHUNA HOSPITAL</h1>
+                <div>
+                    <hr>
+                    <h4>RUHUNU HOSPITAL (PVT) LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/ruhuna_hospital.html"><span></span></a>
+        </div>
+        <div id="_35" class="project-item sector-commercial service-visualization img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">SKODA SHOWROOM</h1>
+                <div>
+                    <hr>
+                    <h4>IWS HOLDINGS (PVT) LTD</h4>
+                </div>
+            </div>
+            <a href="./projects/skoda_showroom.html"><span></span></a>
+        </div>
+        <div id="_36" class="project-item sector-residential service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">NANO HOMES</h1>
+                <div>
+                    <hr>
+                    <h4>LANDMARK DEVELOPERS</h4>
+                </div>
+            </div>
+            <a href="./projects/nano_homes.html"><span></span></a>
+        </div>
+        <div id="_37" class="project-item sector-commercial service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">AKBAR TEA NAWAM MAWATHA</h1>
+                <div>
+                    <hr>
+                    <h4>AKBAR BROTHERS LIMITED</h4>
+                </div>
+            </div>
+            <a href="./projects/akbar_tea_nawam_mawatha.html"><span></span></a>
+        </div>
+        <div id="_38" class="project-item sector-commercial service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">AKBAR TEA SHOP AT PEARL OF ASIA</h1>
+                <div>
+                    <hr>
+                    <h4>AKBAR BROTHERS LIMITED</h4>
+                </div>
+            </div>
+            <a href="./projects/akbar_tea_shop_at_pearl_of_asia.html"><span></span></a>
+        </div>
+        <div id="_39" class="project-item sector-commercial service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">TOURISM INFORMATION CENTER</h1>
                 <div>
                     <hr>
                     <h4>J.N.INTERIORS (PVT) LTD</h4>
                 </div>
             </div>
-            <a href="./projects/ranscrip_crescat.html"><span></span></a>
+            <a href="./projects/tourism_information_center.html"><span></span></a>
         </div>
-        <div id="_29" class="project-item sector-commercial service-visualization img-center">
+        <div id="_40" class="project-item sector-hotel service-visualization service-interior img-center">
             <div class="project-overlay right-overlay">
-                <h1 class="project-name">RUHUNA HOSPITAL</h1>
+                <h1 class="project-name">THE SANDYA BOUTIQUE HOTEL</h1>
                 <div>
                     <hr>
-                    <h4>UNKNOWN CLIENT</h4>
+                    <h4>THE SANDYA BOUTIQUE HOTEL</h4>
                 </div>
             </div>
-            <a href="./projects/ruhuna_hospital.html"><span></span></a>
+            <a href="./projects/sandya_boutique_hotel.html"><span></span></a>
+        </div>
+        <div id="_41" class="project-item sector-commercial service-visualization service-interior img-center">
+            <div class="project-overlay right-overlay">
+                <h1 class="project-name">THE GYMKHANA CLUB</h1>
+                <div>
+                    <hr>
+                    <h4>THE COLOMBO GYMKHANA CLUB</h4>
+                </div>
+            </div>
+            <a href="./projects/gymkhana_club.html"><span></span></a>
         </div>
     </div>
 
@@ -411,6 +537,7 @@
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Theme JavaScript -->
+    <script src="./js/custom.js"></script>
     <script src="./js/filter_projects.js"></script>
 
 </body>

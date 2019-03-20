@@ -10,7 +10,7 @@
     font-family: "source sans pro";
     font-weight: 900;
     font-size: 10vw;
-    padding: 1em 0 2em 0;
+    padding: 0.8em 0 !important;
 }
 
 .team-member {
@@ -33,13 +33,37 @@
     height: 40vw;
     margin-bottom: 10%;
     background-color: #f0f4f9;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #mmbr-1 {
-    background-image: url(../img/Team_members/member_01/member_01.png);
-    background-size: 140%;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../img/team_members/thakshi.jpg);
+}
+
+#mmbr-2 {
+    background-image: url(../img/team_members/gihan.jpg);
+}
+
+#mmbr-3 {
+    background-image: url(../img/team_members/chinthaka.jpg);
+}
+
+#mmbr-4 {
+    background-image: url(../img/team_members/aushadhi.jpg);
+}
+
+#mmbr-5 {
+    background-image: url(../img/team_members/srirama.jpg);
+}
+
+#mmbr-6 {
+    background-image: url(../img/team_members/lasantha.jpg);
+}
+
+#mmbr-7 {
+    background-image: url(../img/team_members/malshan.jpg);
 }
 
 /*----Desktop----*/
@@ -79,8 +103,8 @@
         margin-bottom: 5%;
     }
 
-    #mmbr-1:hover {
+    /* #mmbr-1:hover {
         background-image: url(../img/Team_members/member_01/member_01_fr.png);
-    }
+    } */
 
 }
